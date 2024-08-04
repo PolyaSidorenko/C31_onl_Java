@@ -1,3 +1,4 @@
+package Lessons;
 
 public class Lesson1 {
     public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class Lesson1 {
         System.out.println("Задача 4: " + task4(12.6));
         System.out.println(task5(21, 8));
         task6(1, 3);
+        task6_1(1, 3);
     }
 
     public static int task1(int b, int c) {
@@ -50,6 +52,12 @@ public class Lesson1 {
     }
 
     public static void task6_1(int a, int b) {
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        System.out.println("Задача 6_1: ");
+        System.out.println(a);
+        System.out.println(b);
     }
 
 }
