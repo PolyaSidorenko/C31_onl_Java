@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Lesson3 {
+public class Lesson4 {
     public static void main(String[] args) {
         task1();
         task2();
