@@ -12,13 +12,13 @@ public class StudentMain {
         students.add(new Student("Katya", "112A", 4, new int[]{3, 3, 3, 3, 3, 3}));
         for (Student student : students) {
             System.out.println(student);
-            double avg = method(student.getPoints());
+            double avg = avg(student.getPoints());
             System.out.println("Средний балл студента: " + String.format("%.1f", avg));
         }
         System.out.println("-------------------------------------------------------------");
 
         for (int i = students.size() - 1; i >= 0; --i) {
-            double avg = method(students.get(i).getPoints());
+            double avg = avg(students.get(i).getPoints());
             if (avg < 3) {
                 students.remove(i);
             } else {
@@ -27,7 +27,7 @@ public class StudentMain {
         }
         for (Student student : students){
             System.out.println(student);
-            double avg = method(student.getPoints());
+            double avg = avg(student.getPoints());
             System.out.println("Средний балл студента: " + String.format("%.1f", avg));
         }
         System.out.println("--------------------------------------------------------");
@@ -37,7 +37,7 @@ public class StudentMain {
         printStudents(students, yearNumber);
     }
 
-    public static double method(int[] points) {
+    public static double avg(int[] points) {
         int summ = 0;
         double avg = 0;
         for (int p : points) {
